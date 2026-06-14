@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdur Rahman | Portfolio</title>
     
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
@@ -67,7 +65,7 @@
             margin-bottom: 15px;
         }
 
-      
+        /* Social Links */
         .social-links {
             display: flex;
             justify-content: center;
@@ -92,19 +90,9 @@
             transform: translateY(-5px);
             color: white;
         }
-      
-        .social-icon.fb:hover { 
-            background: #1877f2; border-color: #1877f2; box-shadow: 0 0 20px rgba(24, 119, 242, 0.6); 
-        }
-        .social-icon.ln:hover { 
-            background: #0077b5; border-color: #0077b5; box-shadow: 0 0 20px rgba(0, 119, 181, 0.6); 
-        }
-        .social-icon.ig:hover { 
-            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border-color: transparent; box-shadow: 0 0 20px rgba(204, 35, 102, 0.6); 
-        }
-        .social-icon.gh:hover { 
-            background: #24292e; border-color: #24292e; box-shadow: 0 0 20px rgba(36, 41, 46, 0.6); 
-        }
+        .social-icon.fb:hover { background: #1877f2; border-color: #1877f2; box-shadow: 0 0 20px rgba(24, 119, 242, 0.6); }
+        .social-icon.ln:hover { background: #0077b5; border-color: #0077b5; box-shadow: 0 0 20px rgba(0, 119, 181, 0.6); }
+        .social-icon.ig:hover { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border-color: transparent; box-shadow: 0 0 20px rgba(204, 35, 102, 0.6); }
 
         /* Content Sections */
         .card {
@@ -149,7 +137,24 @@
             font-size: 0.9rem;
         }
         
-        /* --- Photo Gallery Grid Styling --- */
+        /* GPA ব্যাজের মতো হুবহু ম্যাচিং করা VIEW বাটন */
+        .view-btn {
+            background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+            color: white;
+            text-decoration: none;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: opacity 0.3s, transform 0.2s;
+            box-shadow: 0 4px 10px rgba(6, 182, 212, 0.2);
+        }
+        .view-btn:hover {
+            opacity: 0.9;
+            transform: scale(1.05);
+        }
+        
+        /* Photo Gallery Grid */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
@@ -174,7 +179,7 @@
             transform: scale(1.08);
         }
 
-        /* --- Lightbox / Touch Zoom Styling --- */
+        /* Lightbox Overlay */
         .lightbox-overlay {
             position: fixed;
             top: 0;
@@ -232,44 +237,52 @@
             background: #4f46e5;
             transform: translateY(-2px);
         }
+
+        /* Footer */
+        footer {
+            display: block;
+            width: 100%;
+            text-align: center;
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-top: 50px;
+            clear: both;
+        }
     </style>
 </head>
 <body>
 
     <div class="wrapper">
         
-        <!-- Main Profile Card -->
         <div class="profile-card">
             <img src="https://i.ibb.co/7J5Hxpvg/Gemini-Generated-Image-7ctfyh7ctfyh7ctf.png" alt="Abdur Rahman" class="profile-img">
             <h1>ABDUR RAHMAN</h1>
             <p class="subtitle">Student, Tech Enthusiast & Social Activist</p>
             <p>"Welcome to my personal space! With a deep interest in discovering new things, I am a dedicated student whose dream is to pursue higher education in engineering. In addition to my technical dreams, I also actively work as a social activist, so that something positive can be done for the people of society. I believe in constantly learning new things, constructive excellence, and using my knowledge to create a beautiful future!"</p>
             
-            
-         
-               
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1CqduX8JkM/" target="_blank" class="social-icon fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/abdur-rahman-469428415" target="_blank" class="social-icon ln" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/YOUR_USERNAME" target="_blank" class="social-icon ig" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
 
             <a href="mailto:abdurrahman109582@gmail.com" class="email-btn">Get In Touch</a>
         </div>
 
-        <!-- Academic Achievements -->
         <div class="card">
-            <h2>🏆 Academic Achievements</h2>
-            
-            
+            <h2>🏆 Academic Achievements & Certificates</h2>
             
             <div class="list-item">
                 <span>Secondary School Certificate (SSC)</span>
                 <span class="badge">GPA 5.00</span>
             </div>
-            
+
             <div class="list-item">
-                <span>SSC Course Status</span>
-                <span class="badge">Completed</span> 
+                <span>Canva for Presentations Certificate</span>
+                <a href="https://drive.google.com/file/d/1slGL4OzkCcfgm2MxamvU48ggYmRTiQLu/view?usp=sharing" target="_blank" class="view-btn">VIEW</a> 
             </div>
         </div>
-
-      
+        
         <div class="card">
             <h2>🖼️ Photo Gallery</h2>
             <div class="gallery-grid">
@@ -282,33 +295,28 @@
             </div>
         </div>
 
-        <!-- Contact & Info -->
         <div class="card">
             <h2>📍 Information</h2>
             <p style="margin-bottom: 10px;"><strong>Location:</strong> Dhaka, Bangladesh</p>
             <p><strong>Email:</strong> abdurrahman109582@gmail.com</p>
         </div>
 
-       
         <div class="card">
             <h2>📞 Phone</h2>
             <p>+8801570220001</p>
         </div>
 
-     
         <footer>
             <p>© 2026 Abdur Rahman. Crafted with passion.</p>
         </footer>
 
     </div>
 
-    
     <div class="lightbox-overlay" id="lightbox">
         <span class="close-btn" id="closeLightbox">&times;</span>
         <img class="lightbox-img" id="lightboxImg" src="" alt="Enlarged Image">
     </div>
 
-    
     <script>
         const galleryItems = document.querySelectorAll('.gallery-item img');
         const lightbox = document.getElementById('lightbox');
@@ -335,13 +343,3 @@
 
 </body>
 </html>
-   <div class="social-links">
-                <a href="https://www.facebook.com/share/1CqduX8JkM/" target="_blank" class="social-icon fb" title="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/abdur-rahman-469428415" target="_blank" class="social-icon ln" title="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://www.instagram.com/YOUR_USERNAME" target="_blank" class="social-icon ig" title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
